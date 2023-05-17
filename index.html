@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="main">
-        <h2>web app</h1><br>
+        <h2>Расписание УКБУиТК</h1><br>
         <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e54dd338695087.576b404b3649a.gif"><br>
         <button id="buy">Продолжить</button>
     </div>
@@ -26,6 +26,7 @@
         let tg = window.Telegram.WebApp;
         let buy = document.getElementById("buy")
         let order = document.getElementById("order")
+        tg.expand();
 
         buy.addEventListener("click", () =>{
             document.getElementById("main").style.display = "none"
@@ -34,6 +35,16 @@
             document.getElementById("main").style.display = "none"
         })
         order.addEventListener("click", () =>{
+            let list = document.getElementById("list").value;
+            let lesson = document.getElementById("lesson").value;
+            let cabinet = document.getElementById("cabinet").value;
+            let data = {
+                list: list,
+                lesson: lesson,
+                cabinet: cabinet
+            }
+            tg.sendData(JSON.stringify(data));
+
             tg.close();
         })
     </script>
