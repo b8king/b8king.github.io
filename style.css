@@ -43,6 +43,7 @@ img{
     text-align: center;
 }
 input{
+    background: var(--tg-theme-bg-color);
     width: 90%;
     outline: none;
     margin: 10px 5%;
