@@ -20,8 +20,7 @@
     <div id="page_list"><br>
         <h2>Как получить индекс листа</h1><br>
         <p>Нужно скачать xlsx документ</p>
-        <a href="http://45.142.36.12/sample.png">Скачать</a>
-    
+        <a href="http://45.142.36.12/document/xlsx.xlsx">Скачать</a>
        <p>никак хихи хаха</p> 
         <button id="page_1">Далее</button>
     </div>
@@ -36,6 +35,21 @@
         <h2>Как получить индекс кабинетов</h1><br>
         <p>никак хихи хаха</p>
         <button id="page_3">Далее</button>
+    </div>
+    
+    <div id="page_commands"><br>
+        <h2>Cписок комманд для чатов</h1><br>
+        <p>/add - Добавить данные о группе</p>
+        <p>/convert - Сохранить и получить результат</p>
+        <p></p>
+        <button id="page_4">Далее</button>
+    </div>
+
+    <div id="page_chat"><br>
+        <h2>Чат</h1><br>
+        <a href="https://t.me/polling_robot?startgroup=iris&admin=change_info+restrict_members+delete_messages+pin_messages+invite_users">Добавить в свой чат</a><br>
+        <button id="page_5">Далее</button>
+
     </div>
 
     <form id="form"><br>
@@ -58,6 +72,8 @@
         let page_1 = document.getElementById("page_1")
         let page_2 = document.getElementById("page_2")
         let page_3 = document.getElementById("page_3")
+        let page_4 = document.getElementById("page_4")
+        let page_5 = document.getElementById("page_5")
         tg.expand();
 
         buy.addEventListener("click", () =>{
@@ -89,17 +105,40 @@
             document.getElementById("page_list").style.display = "none"
             document.getElementById("page_lesson").style.display = "none"
             document.getElementById("page_cabinet").style.display = "none"
+            document.getElementById("page_commands").style.display = "block"
+            
+        })
+
+        page_4.addEventListener("click", () =>{
+            document.getElementById("main").style.display = "none"
+            document.getElementById("page_list").style.display = "none"
+            document.getElementById("page_lesson").style.display = "none"
+            document.getElementById("page_cabinet").style.display = "none"
+            document.getElementById("page_commands").style.display = "none"
+            document.getElementById("page_chat").style.display = "block"
+            
+        })
+
+        page_5.addEventListener("click", () =>{
+            document.getElementById("main").style.display = "none"
+            document.getElementById("page_list").style.display = "none"
+            document.getElementById("page_lesson").style.display = "none"
+            document.getElementById("page_cabinet").style.display = "none"
+            document.getElementById("page_commands").style.display = "none"
+            document.getElementById("page_chat").style.display = "none"
             document.getElementById("form").style.display = "block"
             
         })
+
         home.addEventListener("click", () =>{
             document.getElementById("main").style.display = "none"
             document.getElementById("page_list").style.display = "none"
             document.getElementById("page_lesson").style.display = "none"
             document.getElementById("page_cabinet").style.display = "none"
             document.getElementById("form").style.display = "none"
+            document.getElementById("page_commands").style.display = "none"
+            document.getElementById("page_chat").style.display = "none"
             document.getElementById("main").style.display = "block"
-            
         })
 
 
