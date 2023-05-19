@@ -69,6 +69,16 @@ img{
     text-align: center;
 }
 
+#page_commands{
+    display: none;
+    text-align: center;
+}
+
+#page_chat{
+    display: none;
+    text-align: center;
+}
+
 input{
     background: var(--tg-theme-text-color);
     width: 90%;
