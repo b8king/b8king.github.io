@@ -26,13 +26,13 @@ button{
 
 #skip{
     font-size: 17px;
-    margin-top: -50px;
+    margin-top: -5px;
     color: var(--tg-theme-button-color);
     background: #00000000;
 }
 #home{
     font-size: 17px;
-    margin-top: -50px;
+    margin-top: -5px;
     color: var(--tg-theme-button-color);
     background: #00000000;
    
@@ -89,7 +89,7 @@ input{
     margin: 10px 5%;
     padding: 15px 10px;
     font-size: 14px;
-    border: 2px var(--tg-theme-button-text-color);
+    border: 2px var(--tg-theme-button-color);
   
     border-radius: 10px;
 }
