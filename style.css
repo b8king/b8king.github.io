@@ -88,6 +88,7 @@ img{
     text-align: center;
 }
 #chat_id{
+    
     border: 0;
     border-radius: 10px;
     margin-top: 50px;
@@ -101,18 +102,29 @@ img{
     background: var(--tg-theme-button-color);
 }
 A {
-    
+    text-decoration: none;
     color: var(--tg-theme-button-text-color); /* Цвет ссылок */
    }
-A:visited {
 
+A:visited {
+    text-decoration: none;
     color: var(--tg-theme-button-text-color); /* Цвет посещенных ссылок */
    }
+
 A:active {
-    
+    text-decoration: none;
     color: var(--tg-theme-button-text-color); /* Цвет активных ссылок */
    }
-
+li{
+    display: list-item;
+    list-style-position: inside;
+}
+td {
+    border-radius: 1px;
+    border: 2px solid var(--tg-theme-button-color);
+    border: 1px solid grey;
+ 
+ }
 input{
     color: var(--tg-theme-button-color);
     background: var(--tg-theme-bg-color);
