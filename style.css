@@ -27,10 +27,12 @@ var(--tg-theme-button-color);
 }
 
 #skip{
+    background: var(--tg-theme-button-text-color);;
     color: var(--tg-theme-button-color);
 }
 #home{
     color: var(--tg-theme-button-color);
+    background: var(--tg-theme-button-text-color);;
 }
 button:hover{
     background: var(--tg-theme-secondary-bg-color);
