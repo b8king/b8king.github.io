@@ -89,6 +89,6 @@ input{
     margin: 10px 5%;
     padding: 15px 10px;
     font-size: 14px;
-    border: 2px solid var(--tg-theme-button-text-color);
-    border-radius: 5px;
+    border-color: var(--tg-theme-button-text-color);
+    border-radius: 10px;
 }
