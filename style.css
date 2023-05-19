@@ -37,6 +37,12 @@ button{
     background: #00000000;
    
 }
+#page_5{
+    font-size: 17px;
+    margin-top: 0px;
+    color: var(--tg-theme-button-color);
+    background: #00000000;
+}
 button:hover{
     background: var(--tg-theme-bg-color);
 }
@@ -95,15 +101,15 @@ img{
     background: var(--tg-theme-button-color);
 }
 A {
-    text-align: center;
+    
     color: var(--tg-theme-button-text-color); /* Цвет ссылок */
    }
 A:visited {
-    text-align: center;
+
     color: var(--tg-theme-button-text-color); /* Цвет посещенных ссылок */
    }
 A:active {
-    text-align: center;
+    
     color: var(--tg-theme-button-text-color); /* Цвет активных ссылок */
    }
 
