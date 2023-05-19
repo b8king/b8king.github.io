@@ -26,15 +26,15 @@ button{
 
 #skip{
     font-size: 15px;
-    margin-top: -30px;
+    margin-top: -20px;
     color: var(--tg-theme-button-color);
-    background: var(--tg-theme-bg-color);
+    background: #00000000;
 }
 #home{
     font-size: 15px;
-    margin-top: -30px;
+    margin-top: -20px;
     color: var(--tg-theme-button-color);
-    background: var(--tg-theme-bg-color);
+    background: #00000000;
    
 }
 button:hover{
