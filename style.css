@@ -27,12 +27,15 @@ var(--tg-theme-button-color);
 }
 
 #skip{
-    background: var(--tg-theme-button-text-color);;
+    font-size: 15px;
+    margin-top: -50px;
     color: var(--tg-theme-button-color);
 }
 #home{
+    font-size: 15px;
+    margin-top: -50px;
     color: var(--tg-theme-button-color);
-    background: var(--tg-theme-bg-color);;
+   
 }
 button:hover{
     background: var(--tg-theme-bg-color);
@@ -80,7 +83,7 @@ img{
 }
 
 input{
-    background: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color);
     width: 90%;
     outline: none;
     margin: 10px 5%;
