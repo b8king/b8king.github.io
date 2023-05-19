@@ -25,14 +25,14 @@ button{
 }
 
 #skip{
-    font-size: 15px;
-    margin-top: -20px;
+    font-size: 17px;
+    margin-top: -50px;
     color: var(--tg-theme-button-color);
     background: #00000000;
 }
 #home{
-    font-size: 15px;
-    margin-top: -20px;
+    font-size: 17px;
+    margin-top: -50px;
     color: var(--tg-theme-button-color);
     background: #00000000;
    
@@ -89,6 +89,6 @@ input{
     margin: 10px 5%;
     padding: 15px 10px;
     font-size: 14px;
-    border: 2px solid #1478C8;
+    border: 2px solid var(--tg-theme-button-text-color);
     border-radius: 5px;
 }
