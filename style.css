@@ -25,6 +25,13 @@ var(--tg-theme-button-text-color);
 var(--tg-theme-button-color);
 
 }
+
+#skip{
+    color: var(--tg-theme-button-color);
+}
+#home{
+    color: var(--tg-theme-button-color);
+}
 button:hover{
     background: var(--tg-theme-secondary-bg-color);
 }
@@ -40,8 +47,26 @@ img{
 }
 #form{
     display: none;
+    width: 100%;
+    padding: 20px;
     text-align: center;
 }
+
+#page_list{
+    display: none;
+    text-align: center;
+}
+
+#page_lesson{
+    display: none;
+    text-align: center;
+}
+
+#page_cabinet{
+    display: none;
+    text-align: center;
+}
+
 input{
     background: var(--tg-theme-text-color);
     width: 90%;

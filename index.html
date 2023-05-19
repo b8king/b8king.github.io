@@ -9,31 +9,97 @@
 
 </head>
 <body>
+
     <div id="main">
         <h2>Расписание УКБУиТК</h1><br>
-        <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/e54dd338695087.576b404b3649a.gif"><br>
-        <button id="buy">Продолжить</button>
+        <img src="emoji.gif"><br>
+        <button id="buy">Продолжить</button><br>
+        <button id="skip">Пропустить</button>
     </div>
+
+    <div id="page_list"><br>
+        <h2>Как получить индекс листа</h1><br>
+        <p>никак хихи хаха</p>
+        <button id="page_1">Далее</button>
+    </div>
+
+    <div id="page_lesson"><br>
+        <h2>Как получить индекс пары</h1><br>
+        <p>никак хихи хаха</p>
+        <button id="page_2">Далее</button>
+    </div>
+
+    <div id="page_cabinet"><br>
+        <h2>Как получить индекс кабинетов</h1><br>
+        <p>никак хихи хаха</p>
+        <button id="page_3">Далее</button>
+    </div>
+
     <form id="form"><br>
         <h2>Заполните форму</h2><br>
         <input type="text" placeholder="Индекс листа" id="list">
         <input type="text" placeholder="Индекс расписания" id="lesson">
         <input type="text" placeholder="Индекс кабинетов" id="cabinet">
-        <button id="order">Готово</button>
+        <button id="order">Готово</button><br>
+        <button id="home">Вернуться</button>
     </form>
+
+
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
         let tg = window.Telegram.WebApp;
         let buy = document.getElementById("buy")
+        let skip = document.getElementById("skip")
+        let home = document.getElementById("home")
         let order = document.getElementById("order")
+        let page_1 = document.getElementById("page_1")
+        let page_2 = document.getElementById("page_2")
+        let page_3 = document.getElementById("page_3")
         tg.expand();
 
         buy.addEventListener("click", () =>{
             document.getElementById("main").style.display = "none"
-            document.getElementById("form").style.display = "block"
-
-            document.getElementById("main").style.display = "none"
+            document.getElementById("page_list").style.display = "block"
+            
         })
+
+        skip.addEventListener("click", () =>{
+            document.getElementById("main").style.display = "none"
+            document.getElementById("form").style.display = "block"
+            
+        })
+
+        page_1.addEventListener("click", () =>{
+            document.getElementById("main").style.display = "none"
+            document.getElementById("page_list").style.display = "none"
+            document.getElementById("page_lesson").style.display = "block"
+        })
+        page_2.addEventListener("click", () =>{
+            document.getElementById("main").style.display = "none"
+            document.getElementById("page_list").style.display = "none"
+            document.getElementById("page_lesson").style.display = "none"
+            document.getElementById("page_cabinet").style.display = "block"
+        })
+
+        page_3.addEventListener("click", () =>{
+            document.getElementById("main").style.display = "none"
+            document.getElementById("page_list").style.display = "none"
+            document.getElementById("page_lesson").style.display = "none"
+            document.getElementById("page_cabinet").style.display = "none"
+            document.getElementById("form").style.display = "block"
+            
+        })
+        home.addEventListener("click", () =>{
+            document.getElementById("main").style.display = "none"
+            document.getElementById("page_list").style.display = "none"
+            document.getElementById("page_lesson").style.display = "none"
+            document.getElementById("page_cabinet").style.display = "none"
+            document.getElementById("form").style.display = "none"
+            document.getElementById("main").style.display = "block"
+            
+        })
+
+
         order.addEventListener("click", () =>{
             let list = document.getElementById("list").value;
             let lesson = document.getElementById("lesson").value;
