@@ -10,8 +10,12 @@
 </head>
 <body>
 
+    <div id='preloader'>
+        <img src="pulse.gif" alt="preloader">
+    </div>
+
     <div id="main">
-        <h2>Расписание УКБУиТК</h1><br>
+        <h2>Веб-приложение</h1><br>
         <img src="emoji.gif"><br>
         <button id="buy">Продолжить</button><br>
         <button id="skip">Пропустить</button>
@@ -20,7 +24,7 @@
     <div id="page_list"><br>
         <h2>Как получить индекс листа</h1><br>
         <ol>
-        <li>Нужно скачать xlsx документ - <a href="http://45.142.36.12/pofaktus-bot/data/document/xlsx.xlsx">Скачать</a></li><br>
+        <li>Нужно скачать xlsx документ - <a href="http://45.142.36.12/document/xlsx.xlsx">Скачать</a></li><br>
         <li>Затем найти свой лист с расписанием и посчитать его индекс</li><br> 
         </ol>
         <center>
@@ -65,7 +69,7 @@
         <h2>Чат</h1><br>
             <center>
         <div id="chat_id">
-            <a href="https://t.me/polling_robot?startgroup=iris&admin=change_info+restrict_members+delete_messages+pin_messages+invite_users">Добавить в свой чат</a>
+            <a href="https://t.me/polling_robot?addgroup=iris&admin=change_info+restrict_members+delete_messages+pin_messages+invite_users">Добавить в свой чат</a>
         </div><br>
             </center>
         <button id="page_5">Далее</button>
@@ -80,101 +84,7 @@
         <button id="order">Готово</button><br>
         <button id="home">Вернуться</button>
     </form>
-
-
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script>
-        let tg = window.Telegram.WebApp;
-        let buy = document.getElementById("buy")
-        let skip = document.getElementById("skip")
-        let home = document.getElementById("home")
-        let order = document.getElementById("order")
-        let page_1 = document.getElementById("page_1")
-        let page_2 = document.getElementById("page_2")
-        let page_3 = document.getElementById("page_3")
-        let page_4 = document.getElementById("page_4")
-        let page_5 = document.getElementById("page_5")
-        tg.expand();
-
-        buy.addEventListener("click", () =>{
-            document.getElementById("main").style.display = "none"
-            document.getElementById("page_list").style.display = "block"
-            
-        })
-
-        skip.addEventListener("click", () =>{
-            document.getElementById("main").style.display = "none"
-            document.getElementById("form").style.display = "block"
-            
-        })
-
-        page_1.addEventListener("click", () =>{
-            document.getElementById("main").style.display = "none"
-            document.getElementById("page_list").style.display = "none"
-            document.getElementById("page_lesson").style.display = "block"
-        })
-        page_2.addEventListener("click", () =>{
-            document.getElementById("main").style.display = "none"
-            document.getElementById("page_list").style.display = "none"
-            document.getElementById("page_lesson").style.display = "none"
-            document.getElementById("page_cabinet").style.display = "block"
-        })
-
-        page_3.addEventListener("click", () =>{
-            document.getElementById("main").style.display = "none"
-            document.getElementById("page_list").style.display = "none"
-            document.getElementById("page_lesson").style.display = "none"
-            document.getElementById("page_cabinet").style.display = "none"
-            document.getElementById("page_commands").style.display = "block"
-            
-        })
-
-        page_4.addEventListener("click", () =>{
-            document.getElementById("main").style.display = "none"
-            document.getElementById("page_list").style.display = "none"
-            document.getElementById("page_lesson").style.display = "none"
-            document.getElementById("page_cabinet").style.display = "none"
-            document.getElementById("page_commands").style.display = "none"
-            document.getElementById("page_chat").style.display = "block"
-            
-        })
-
-        page_5.addEventListener("click", () =>{
-            document.getElementById("main").style.display = "none"
-            document.getElementById("page_list").style.display = "none"
-            document.getElementById("page_lesson").style.display = "none"
-            document.getElementById("page_cabinet").style.display = "none"
-            document.getElementById("page_commands").style.display = "none"
-            document.getElementById("page_chat").style.display = "none"
-            document.getElementById("form").style.display = "block"
-            
-        })
-
-        home.addEventListener("click", () =>{
-            document.getElementById("main").style.display = "none"
-            document.getElementById("page_list").style.display = "none"
-            document.getElementById("page_lesson").style.display = "none"
-            document.getElementById("page_cabinet").style.display = "none"
-            document.getElementById("form").style.display = "none"
-            document.getElementById("page_commands").style.display = "none"
-            document.getElementById("page_chat").style.display = "none"
-            document.getElementById("main").style.display = "block"
-        })
-
-
-        order.addEventListener("click", () =>{
-            let list = document.getElementById("list").value;
-            let lesson = document.getElementById("lesson").value;
-            let cabinet = document.getElementById("cabinet").value;
-            let data = {
-                list: list,
-                lesson: lesson,
-                cabinet: cabinet
-            }
-            tg.sendData(JSON.stringify(data));
-
-            tg.close();
-        })
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
