@@ -39,15 +39,15 @@ let tg = window.Telegram.WebApp;
             document.getElementById("main").style.display = "none"
             document.getElementById("page_list").style.display = "none"
             document.getElementById("page_lesson").style.display = "none"
-            document.getElementById("page_cabinet").style.display = "block"
+            document.getElementById("page_commands").style.display = "block"
         })
 
         page_3.addEventListener("click", () =>{
             document.getElementById("main").style.display = "none"
             document.getElementById("page_list").style.display = "none"
             document.getElementById("page_lesson").style.display = "none"
-            document.getElementById("page_cabinet").style.display = "none"
-            document.getElementById("page_commands").style.display = "block"
+            document.getElementById("page_commands").style.display = "none"
+            document.getElementById("page_chat").style.display = "block"
             
         })
 
@@ -55,22 +55,12 @@ let tg = window.Telegram.WebApp;
             document.getElementById("main").style.display = "none"
             document.getElementById("page_list").style.display = "none"
             document.getElementById("page_lesson").style.display = "none"
-            document.getElementById("page_cabinet").style.display = "none"
-            document.getElementById("page_commands").style.display = "none"
-            document.getElementById("page_chat").style.display = "block"
-            
-        })
-
-        page_5.addEventListener("click", () =>{
-            document.getElementById("main").style.display = "none"
-            document.getElementById("page_list").style.display = "none"
-            document.getElementById("page_lesson").style.display = "none"
-            document.getElementById("page_cabinet").style.display = "none"
             document.getElementById("page_commands").style.display = "none"
             document.getElementById("page_chat").style.display = "none"
             document.getElementById("form").style.display = "block"
             
         })
+
 
         home.addEventListener("click", () =>{
             document.getElementById("main").style.display = "none"
