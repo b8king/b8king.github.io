@@ -34,11 +34,11 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #ffffff;
+    background: var(--tg-theme-bg-color);
 }
 
 #preloader.hide-preloader {
-    animation: hidePreloader 1s;
+    animation: hidePreloader 3s;
 }
 
 #preloader.preloader-hidden {
