@@ -63,14 +63,12 @@ let tg = window.Telegram.WebApp;
 
 
         home.addEventListener("click", () =>{
-            document.getElementById("main").style.display = "none"
+            document.getElementById("main").style.display = "block"
             document.getElementById("page_list").style.display = "none"
             document.getElementById("page_lesson").style.display = "none"
-            document.getElementById("page_cabinet").style.display = "none"
-            document.getElementById("form").style.display = "none"
             document.getElementById("page_commands").style.display = "none"
             document.getElementById("page_chat").style.display = "none"
-            document.getElementById("main").style.display = "block"
+            document.getElementById("form").style.display = "none"
         })
 
 
